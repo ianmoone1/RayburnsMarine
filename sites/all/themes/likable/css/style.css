@@ -81,9 +81,11 @@ h2 a:hover {
   float: left;
   margin: 15px 0 0 4px;
 }
-#sitename {
+#sitename h1{
   float: left;
   margin: 30px 15px 0 20px;
+  color: black;
+  text-decoration: none;
 }
 #header h1 {
   font-size: 24px;
