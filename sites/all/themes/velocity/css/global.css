@@ -61,7 +61,7 @@ h6{
   line-height:1.5;  /* 24px */
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #333;
+  color: #fff;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -5057,6 +5057,28 @@ ul.secondary a:focus {
 ul.secondary a.active,
 ul.secondary a.active:hover,
 ul.secondary a.active:focus {
+}
+
+.views-field-field-boat-logo-images img {
+  display: block;
+  float: left;
+  width: 215px;
+  height: 115px;
+  padding: 7px; 
+}
+
+.views-field-field-welcome-banner {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  top: 1px;
+}
+
+.views-field-field-welcome-sub-banner{
+  position: relative;
+  text-align: center;
+  font-size: 25px;
 }
 
 /*------------------------------------*\
