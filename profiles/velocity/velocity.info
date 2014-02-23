@@ -1,0 +1,7 @@
+name = ST Velocity
+description = ST Velocity install fullsite package.
+version = VERSION
+core = 7.x
+files[] = velocity.profile
+
+
