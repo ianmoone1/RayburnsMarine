@@ -61,7 +61,7 @@ h6{
   line-height:1.5;  /* 24px */
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #fff;
+  color: #000;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -136,9 +136,12 @@ blockquote {
 .zone-title-wrapper {
   background: url(../images/zone-title-bg.png) center center no-repeat;
   color: #fff;
+  height: 100px;
 }
 .zone-title {
   padding: 20px 0;
+  position: relative;
+  top: -20px;
 }
 .zone-header-wrapper {
   background: #fafafa;
@@ -5080,7 +5083,60 @@ ul.secondary a.active:focus {
   text-align: center;
   font-size: 25px;
 }
+.views-field-field-main-content{
+  margin-top: 20px;
+}
+#zone-user-wrapper{
+  background-color: #333;
+  background: #101010 url('images/bkg.png') bottom left repeat-x;
 
+}
+.views-field-field-phone-number{
+  font-size: 18px;
+  color: #fff;
+  float: left;
+  width: 150px;
+}
+.view-id-user_header{
+  position: relative;
+  left: 1000px;
+}
+.views-field-field-facebook-logo img{
+  float: left;
+}
+.views-field-field-twitter-logo{
+  float: left;
+}
+ li{
+  display: inline-block;
+ }
+ #block-nice-menus-1{
+  height: 79px; 
+ }
+ .dealer-sub-menu{
+  position: relative;
+  left: 255px;
+  font-weight: bold;
+ }
+ .dealer-sub-menu li{
+  margin-left: 10px;
+ }
+ .field-type-image img{
+  width: 250px;
+  height: 250px;
+ }
+ .views-field-field-edge-logo{
+  text-align: center;
+  margin-bottom: 15px;
+ }
+ .views-field-field-edge-logo img{
+  height: 213px;
+  width: 1064px;
+ }
+ .views-field-field-brand-logos img{
+  height: 120px;
+  width: 200px;
+ }
 /*------------------------------------*\
 	Preloader CSS
 \*------------------------------------*/

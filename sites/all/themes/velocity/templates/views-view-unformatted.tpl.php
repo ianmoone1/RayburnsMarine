@@ -17,3 +17,8 @@
     </div>
   </div>
 <?php endforeach; ?>
+<?php
+if($_GET['q']=="dealer-services") {
+drupal_add_css(path_to_theme() . '/services.css', 'theme', 'all');
+}
+?>
