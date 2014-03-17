@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Code for the Used boats feature.
+ */
+
+include_once 'used_boats.features.inc';
+
+    // /**
+    //  * Implements hook_library().
+    //  */
+    // function mymodule_library() {
+    // // I usually get get the path to my module in advance for ease of use later
+	   //  $module_path = drupal_get_path('module', 'used_boats');
+	     
+	   //  $items = array();
+	     
+	   //  $items['boats'] = array(
+	   //  	'title' => t('Boats'),
+	   //  	'version' => '1.0',
+	   //  	'js' => array(
+	   //  	$module_path . '/used_boats.js' => array(),
+	   //  	),
+	   //  	//'css' => array(
+	   //  	//	$module_path . '/css/awesomeness.css' => array(),
+	   //  	//),
+	   //  );
+	     
+	   //  return $items;
+    // }
