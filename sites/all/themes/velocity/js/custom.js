@@ -26,13 +26,66 @@
        });
     }
   };
-  
+  Drupal.behaviors.velocityShow = {
+    attach: function () {
+      $('.form-item-tid').click(function() {
+        if($("input[id=edit-tid-29]").is(":checked")){
+          $('#cobalt').show();
+        }
+        else{
+          $('#cobalt').hide();
+        }
+        if($("input[id=edit-tid-33]").is(":checked")){
+          $('#crownline').show();
+        }
+        else{
+          $('#crownline').hide();
+        }
+        if($("input[id=edit-tid-31]").is(":checked")){
+          $('#mastercraft').show();
+        }
+        else{
+          $('#mastercraft').hide();
+        }
+        if($("input[id=edit-tid-32]").is(":checked")){
+          $('#misty').show();
+        }
+        else{
+          $('#misty').hide();
+        }
+        if($("input[id=edit-tid-30]").is(":checked")){
+          $('#regal').show();
+        }
+        else{
+          $('#regal').hide();
+        }
+      });
+    }
+  };
+
   Drupal.behaviors.velocityTabs = {
     attach: function () {
 	   $('.block-tabs').tabs();
     }
   };
-  
+  Drupal.behaviors.menu = {
+    attach: function () {
+      $(document).ready(function () {
+        $("li").click(function () {
+          $('li > ul').not($(this).children("ul")).hide();
+          $(this).children("ul").toggle();
+        });
+      });
+     }
+  };
+  // Drupal.behaviors.used_boats = {
+  //   attach: function () {
+  //     var url = $('#searchResultsDetailsPhoto img:first').attr('src');
+  //     var modified = url.replace(/\?.*$/, '');
+  //     $('#searchResultsDetailsPhoto img:first').attr('src', modified);
+  //     alert(modified);
+  //   }
+  // };
   Drupal.behaviors.velocityToggle = {
     attach: function () {
         $('div.toggle_area').find('div.toggle_content').hide().end();

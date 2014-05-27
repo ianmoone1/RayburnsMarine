@@ -8,7 +8,7 @@ body {
   padding: 0;
   font-size: 85.25%; /* 14px */
   line-height: 1.846;
-  color: #999;
+  color: #222;
   font-family: 'Open Sans',Helvetica,Arial,sans-serif;
 }
 a,
@@ -27,6 +27,9 @@ a:active {
 .section-footer a:hover,
 .section-footer a:active {
   color: #fff;
+}
+.section-footer li{
+  display: list-item;
 }
 
 /*--- HEADINGS ---*/
@@ -128,20 +131,57 @@ blockquote {
   -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   
 }
+.zone-content-top.fixed {
+  position: fixed;
+  top: -10px;
+  left:0px;
+  z-index: 100;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.50);  
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  
+}
+.zone-content-top.fixed .sub-menu{
+  position: relative;
+  top: -50px;
+  font-size: 14px;
+  
+}
+#top-wrapper{
+  display: none;
+}
+#top-wrapper.fixed{
+  position: fixed;
+  display: block;
+  top: -10px;
+  left:0px;
+  z-index: 100;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.50);  
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  
+}
+.to-top{
+  float: right;
+}
 .zone-branding-wrapper {
   background: #fff url(../images/rainbow-border.png) center top repeat-x;
   padding-top: 3px;
   border: 1px solid #e8e8e8;
 }
 .zone-title-wrapper {
-  background: url(../images/zone-title-bg.png) center center no-repeat;
+  background: url(../images/zone-title-bg.png) center center repeat-x;
   color: #fff;
   height: 100px;
 }
 .zone-title {
   padding: 20px 0;
-  position: relative;
-  top: -20px;
 }
 .zone-header-wrapper {
   background: #fafafa;
@@ -223,6 +263,7 @@ blockquote {
 }
 #logo img {
   vertical-align: bottom;
+  width: 100%;
 }
 #name-and-slogan {
   float: left;
@@ -1728,6 +1769,8 @@ article.node-article .comment .user-picture {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+  position: relative;
+  left: 160px;
 }
 .node-portfolio .field-name-body .field-label {
   padding-bottom: 10px;
@@ -3328,7 +3371,7 @@ h2.home-block-title {
   width: 100%;
   float: left;
   text-align: center;
-  padding: 27px 0;
+  padding: 6px 0;
 }
 .branding-data .logo-img {
   float: none;
@@ -3351,7 +3394,7 @@ h2.home-block-title {
   margin: 0 auto;
 }
 .block-search .form-item {
-  margin: 0;
+
 }
 .block-search input.form-submit,
 .block-search input.form-submit:hover {
@@ -3697,6 +3740,7 @@ ul.quicktabs-tabs li.active a {
   max-width: 100% !important;
   width: 100% !important;
   padding-right: 0 !important;
+  text-align: center;
 }
 .field-slideshow .field-slideshow-slide img {
 }
@@ -4704,7 +4748,7 @@ https://developers.facebook.com/docs/reference/plugins/like-box/
 /* Contact form */
 .contact-form .form-item {
   padding: 10px 0px;
-  margin:0;
+
   float: left;
   width: 100%;
 }
@@ -4787,7 +4831,7 @@ ul.action-links {
 \*------------------------------------*/
 
 .form-item /* Wrapper for a form element (or group of form elements) and its label */ {
-  margin: 1em 0;
+
 }
 .form-item input.form-text,
 .form-item textarea.form-textarea {
@@ -4808,15 +4852,15 @@ ul.action-links {
   border: 1px solid #c00;
 }
 
-.form-item label /* The label for a form element */ {
+/*.form-item label  The label for a form element  {
   display: block;
   font-weight: bold;
 }
 
-.form-item label.option /* The label for a radio button or checkbox */ {
+.form-item label.option /* The label for a radio button or checkbox  {
   display: inline;
   font-weight: normal;
-}
+}*/
 
 .form-required /* The part of the label that indicates a required field */ {
   color: #c00;
@@ -4828,7 +4872,7 @@ ul.action-links {
 
 .form-checkboxes .form-item,
 .form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
-  margin: 0; /* Drupal core uses "0.4em 0" */
+   /* Drupal core uses "0.4em 0" */
 }
 button:focus, button:active,
 input:focus, input:active,
@@ -5066,7 +5110,7 @@ ul.secondary a.active:focus {
   display: block;
   float: left;
   width: 215px;
-  height: 115px;
+  height: 35px;
   padding: 7px; 
 }
 
@@ -5076,12 +5120,14 @@ ul.secondary a.active:focus {
   font-weight: bold;
   font-size: 35px;
   top: 1px;
+  color: #111;
 }
 
 .views-field-field-welcome-sub-banner{
   position: relative;
   text-align: center;
   font-size: 25px;
+  color: #111;
 }
 .views-field-field-main-content{
   margin-top: 20px;
@@ -5099,7 +5145,7 @@ ul.secondary a.active:focus {
 }
 .view-id-user_header{
   position: relative;
-  left: 1000px;
+  float: right;
 }
 .views-field-field-facebook-logo img{
   float: left;
@@ -5114,14 +5160,14 @@ ul.secondary a.active:focus {
   height: 79px; 
  }
  .dealer-sub-menu{
-  position: relative;
-  left: 255px;
+  z-index: 9999;
   font-weight: bold;
+  text-align: center;
  }
  .dealer-sub-menu li{
   margin-left: 10px;
  }
- .field-type-image img{
+ .page-dealer-services .field-type-image img{
   width: 250px;
   height: 250px;
  }
@@ -5137,6 +5183,213 @@ ul.secondary a.active:focus {
   height: 120px;
   width: 200px;
  }
+.views-field-field-boat-logo-images{
+ text-align: center;
+  position: relative;
+  margin-top: -40px;
+}
+ .views-field-field-boat-storage ul{
+  display: inline-block;
+ }
+ .views-field-field-boat-storage ul li{
+    display: block;
+ }
+
+
+ #node_new_boat_full_group_general, 
+ #node_new_boat_full_group_measurements,
+ #node_new_boat_full_group_engine{
+  text-align: center;
+  position: relative;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+/*------------------------------------*\
+  About Us CSS
+/*------------------------------------*/
+.views-label{
+  color: #e6624d;
+  font-weight: bold;
+  font-size: 18px;
+}
+.views-field-field-awards{
+  width: 600px;
+  float: left;
+}
+.views-field-field-awards li{
+  width: 600px;
+
+}
+.views-field-field-awards-image{
+  float: left;
+  vertical-align: center;
+}
+.views-field-field-mission{
+  margin-bottom: 20px;
+}
+.views-field-field-dealer-certificate{
+  margin-bottom: 20px;
+}
+.views-field-field-top-100-paragraph{
+  margin-bottom: 20px;
+}
+.views-field-field-top-100-logo{
+  margin-bottom: 20px; 
+}
+.views-field-field-image-finance{
+  text-align: center;
+}
+/*------------------------------------*\
+  Browse Boats CSS
+/*------------------------------------*/
+.field-make-image{
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 5px;
+}
+.field-make-image:hover{
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+}
+
+.option #edit-tid-31{
+  background: red;
+}
+.views-field-field-boat-images{
+  width: 250px;
+}
+.form-item-tid{
+  margin-left: 10px;
+}
+.view-id-user_header{
+  width: 260px;
+}
+.views-field-field-boat-images img{
+  width: 50%;
+}
+#edit-tid-wrapper{
+  color: #e6624d;
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 40px;
+  text-align: center;
+  
+}
+.fieldset-legend{
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.form-item-tid input[type="radio"] {
+  display: none;
+}
+.form-item-tid label{
+  height: 70px;
+  width: 170px;
+  display:inline-block;
+    
+}
+#edit-tid-all[type="radio"] + label{
+ background: url(/sites/all/themes/velocity/images/all-makes.png) center no-repeat;
+  background-size: 175px;
+  width: 120px;
+
+}
+#field-slideshow-1-wrapper{
+  margin-top: 65px;
+}
+.browse-make-wrapper{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.browse-make-wrapper a:hover< .boat-make{
+  background-color: red;
+}
+.boat-make{
+  width: 20%;
+  display: inline-block;
+  height: 40px;
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+}
+#crownline{
+  background: url(/sites/all/themes/velocity/images/crownline.png) center no-repeat;
+  background-size: 157px;
+}
+#cobalt{
+  background: url(/sites/all/themes/velocity/images/cobalt.png) center no-repeat;
+  background-size: 170px;
+}
+#mastercraft{
+  background: url(/sites/all/themes/velocity/images/Mastercraft_logo.png) center no-repeat;
+  background-size: 175px;
+}
+#regal{
+  background: url(/sites/all/themes/velocity/images/regal-logo.png) center no-repeat;
+  background-size: 180px;
+}
+.pane-block-56 .pane-title{
+  text-align: center;
+  display: none;
+}
+.web-links{
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+#web-link-wrapper{
+  text-align: center;
+}
+/*----------------------------------*\
+  Sales Team CSS
+\*----------------------------------*/
+.field-name-field-sales-employee-picture{
+  float: left;
+  margin-right: 30px;
+}
+.field-name-field-sales-employee-name{
+  font-weight: bold;
+  color: #111;
+}
+.pane-block-55
+{
+  text-align: center;
+}
+#contentContainerFramed{
+  width: 1000px;
+}
+
+
+.block-views-contact-information-block{
+  text-align: center;
+  float: left;
+  width: 40%;
+margin-left: 50px;
+}
+.views-field-field-calgary-hours ul li{
+  display: list-item;
+}
+
+.views-field-field-kelowna-hours ul li{
+  display: list-item;
+}
+.sub-menu{
+  text-align: center;
+}
+.sub-menu li{
+  margin-left: 20px;
+}
+.sub-menu li a{
+  font-size: 20px;
+  font-weight: bold;
+}
+..zone-content-top{
+  padding-top: 0;
+}
 /*------------------------------------*\
 	Preloader CSS
 \*------------------------------------*/

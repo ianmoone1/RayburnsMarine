@@ -463,6 +463,9 @@ article.node-team-member .field-name-field-member-image {
   float: left;
   margin-top: 50px;
 }
+.form-item-tid  label{
+    margin-left: 5px;
+}
 /*------------------------------------*\
 	OTHER STYLE CSS
 \*------------------------------------*/
@@ -491,4 +494,9 @@ article.node-team-member .field-name-field-member-image {
 }
 .three-fourth {
   width: 74%;
+}
+
+.block-views-kelowna-contact-block{
+  width: 100%;
+  margin-left: 0px;
 }

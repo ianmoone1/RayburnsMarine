@@ -18,7 +18,7 @@ body {
   border: 1px solid #e8e8e8;
 }
 .zone-title-wrapper {
-  background: url(../images/zone-title-bg.png) center center no-repeat;
+  background: url(../images/zone-title-bg.png) center center repeat-x;
 }
 .zone-header-wrapper {
   background: #fafafa;
